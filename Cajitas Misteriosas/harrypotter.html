@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cajita Misteriosa: Harry Potter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Cajita Misteriosa: Harry Potter</h1>
+  </header>
+    <button class="btn-volver" onclick="location.href='index.html'">← Volver</button>
+
+  <main class="detalle-cajita">
+    <section class="imagenes">
+      <div class="imagen-grande">
+        <img src="imagenes P/Harry Potter and the Prisoner of Azkaban Series Figures-POP MART(United States).jfif" alt="Harry Potter vista principal">
+      </div>
+      <div class="imagenes-pequenas">
+        <img src="imagenes P/harry potter 2 (1).jfif" alt="Harry Potter detalle 1">
+        <img src="imagenes P/harry potter 2 (2).jfif" alt="Harry Potter detalle 2">
+      </div>
+    </section>
+
+    <section class="info">
+      <h2>Detalles del producto</h2>
+      <p>Una cajita misteriosa inspirada en el mundo mágico de Harry Potter. Podría contener una figura sorpresa de tu casa favorita de Hogwarts, un artefacto encantado o incluso un personaje inesperado.</p>
+
+      <h2>Información de envío</h2>
+      <p>Envío nacional disponible. Tiempo estimado: 3–5 días hábiles. Empaque seguro y seguimiento incluido.</p>
+    </section>
+
+    <section class="formulario-envio">
+      <h2>Formulario de envío</h2>
+      <form id="formCompra">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <button type="submit">Finalizar compra</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Cajitas Misteriosas</p>
+  </footer>
+
+  <script>
+    document.getElementById("formCompra").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const nombre = document.getElementById("nombre").value;
+      const direccion = document.getElementById("direccion").value;
+
+      alert("✨ Gracias por tu compra, " + nombre + "! \n\nTu cajita misteriosa será enviada a: " + direccion +
+            "\n\nRecuerda... en el mundo mágico, la sorpresa puede ser la reliquia que menos esperabas ⚡🪄");
+    });
+  </script>
+</body>
+</html>
+<link rel="stylesheet" href="stylespochaco.css">

@@ -1,0 +1,137 @@
+.detalle-cajita {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.imagenes {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.imagen-grande img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.imagenes-pequenas {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.imagenes-pequenas img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.info {
+  background-color: var(--tarjeta);
+  color: var(--texto);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+.info h2 {
+  color: var(--hover);
+  margin-top: 0;
+}
+
+@media (max-width: 600px) {
+  .imagenes {
+    grid-template-columns: 1fr;
+  }
+  .imagenes-pequenas {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .imagenes-pequenas img {
+    width: 45%;
+  }
+}
+.formulario-envio {
+  background-color: #f1cdca; /* rojo claro pastel */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  margin-top: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #000; /* texto negro */
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.formulario-envio h2 {
+  color: #000; /* título en negro */
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.formulario-envio label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: bold;
+  color: #000;
+}
+
+.formulario-envio input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #e5d5b5; /* borde crema */
+  border-radius: 8px;
+  background-color: #fff; /* fondo blanco */
+  color: #000;
+  box-sizing: border-box;
+}
+
+.formulario-envio input:focus {
+  outline: none;
+  border-color: #f28b82; /* rojo claro */
+  box-shadow: 0 0 5px #f28b82;
+}
+
+.formulario-envio button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #000; /* botón negro */
+  color: #fff; /* texto blanco */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.formulario-envio button:hover {
+  background-color: #f28b82; /* rojo claro */
+  color: #000; /* texto negro */
+}
+.btn-volver {
+  background-color: #f28b82; /* rojo claro pastel */
+  color: #fff; /* texto blanco */
+  padding: 6px 12px; /* compacto, justo para el texto */
+  border-radius: 8px; /* esquinas suavemente redondeadas */
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin: 10px;
+}
+
+.btn-volver:hover {
+  background-color: #d65c5c; /* rojo más intenso al pasar el mouse */
+}
+
